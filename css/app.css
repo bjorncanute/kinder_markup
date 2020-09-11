@@ -1,0 +1,324 @@
+/*/ Fonts */
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+/* @font-face {
+    font-family: 'devioussans02bold';
+    src: url('../fonts/devioussans-02-bold.woff2') format('woff2');
+} */
+
+@font-face {
+    font-family: 'devioussans02extrabold';
+    src: url('../fonts/devioussans-02-extrabold.woff2') format('woff2');   
+}
+
+@font-face {
+    font-family: 'devioussans02bold';
+    src: url('../fonts/devioussans-02-bold.woff2') format('woff2');   
+}
+
+@font-face {
+    font-family: 'devioussans02medium';
+    src: url('../fonts/devioussans-02-medium.woff2') format('woff2');
+    
+}
+
+@font-face {
+    font-family: 'devioussans02light';
+    src: url('../fonts/devioussans-02-light.woff2') format('woff2');
+    
+}
+
+@font-face {
+    font-family: 'devioussans02regular';
+    src: url('../fonts/devioussans-02-regular.woff2') format('woff2');
+    
+}
+
+
+.user-menu .dropdown-menu {
+    width: 330px; 
+}
+
+.chat-menu .dropdown-menu {
+    width: 440px;
+}
+
+.chat-menu .dropdown-menu .nav-link {
+    color: black;
+}
+.chat-menu .dropdown-menu .nav-link.active {
+    color: black;
+}
+
+.notification-menu .dropdown-menu {
+    width: 440px;
+}
+
+.notification-menu .text-block {
+    white-space: normal;
+}
+
+.notification-menu .msg-attention {
+    background-color: #d4edda;
+}
+.notification-menu .avatar {
+    position: relative;
+}
+.notification-type-icon {
+    position: absolute;
+    bottom: -10px;
+    left: -14px;
+
+    width: 28px;
+    height: 28px;
+    border-radius: 100px;
+    background-color: white;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.21);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* === custom styling === */
+/* ====================== */
+
+.sketch-item {
+    margin: 1px;
+    position: relative;
+}
+
+.sketch-item-image {
+    width: 100%;
+    height: auto;
+}
+
+.sketch-item:hover .fade-overlay {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    background-image: linear-gradient(rgba(22, 26, 31, 0), rgb(22, 26, 31));
+}
+
+.sketch-item-info {
+    display: none;
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    /* background-color: black; */
+
+    overflow: hidden;
+}
+
+.sketch-item:hover .sketch-item-info {
+    display: block;
+}
+
+.sketch-item-info a {
+    
+    font-weight: 400;
+    color: #fff;
+    line-height: 19.5px;
+    text-decoration: none;
+    letter-spacing: 0.3px;;
+}
+
+.sketch-item-title {
+    font-family: devioussans02bold, 'Courier New', Courier, monospace;   
+    font-size: 16px;
+}
+
+.sketch-item .media {
+    margin-top: 14px;
+}
+.sketch-item-creator-name {
+    font-size: 14px;
+    font-family: devioussans02regular, 'Courier New', Courier, monospace;   
+
+}
+
+.gallery-container .sketch-item {
+    margin: 4px;
+
+}
+
+/* === gallery header  === */
+/* ======================= */
+
+.gallery-header {
+    height: 40px;
+    /* background: blue; */
+    margin-top: 40px;
+
+    font-size: 18px;
+    font-family: devioussans02bold, 'Courier New', Courier, monospace;   
+    color: white;
+}
+
+
+  
+
+/* === main header nav === */
+/* ======================= */
+
+
+
+._main-nav-bar {
+    height: 53px;
+    background-color: #05060a;
+}
+
+
+main > .container-fluid {
+    /* background-color: green; */
+    /* width: 100% !important;
+    padding: 0 60px;
+    max-width: none; */
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+
+
+/* === v === */
+/* ======================= */
+body {
+    background-color: #06070d;
+}
+
+main {
+    position: relative;
+    z-index: 3;
+    /* padding-top: 250px; */
+    padding-top: 200px;
+
+}
+
+
+._fade {
+    width: 100%;
+    top: 626px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    /* background-color: blue; */
+    background-color: #06070d;
+    z-index: -1;
+}
+._fade::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    transform: translateY(-100%);
+    background-image: linear-gradient(rgba(6, 7, 13, 0) 0px, rgb(6, 7, 13) 70%, rgb(6, 7, 13));
+    /* background: green; */
+}
+
+.hero-banner {
+    background-image: url('../dark_bg.png');
+    background-position: 50%;
+    background-size: cover;
+
+    width: 100%;
+    height: 520px;
+    top: 54px;
+    position: fixed;
+    z-index: 1;
+}
+
+
+/* === navigation bar  === */
+/* ======================= */
+
+
+._main-nav-bar {
+    height: 53px;
+    background-color: #05060a;
+}
+
+.hero-section {
+    
+}
+
+.hero-banner {
+    /* background-color: rgba(0,0,0, .4); */
+
+}
+
+.display-user {
+    margin-left: 20px;
+    
+    font-size: 17px;
+ 
+    letter-spacing: .3px;
+    line-height: normal;
+
+    color: rgb(242, 242, 242);
+    font-family: devioussans02regular;   
+}
+
+.display-user h1 {
+    font-size: 48px;
+    font-weight: 400;
+    font-family: devioussans02extrabold;
+
+}
+
+.display-user span {
+    font-size: 17px;
+    font-family: devioussans02regular;   
+    margin: 0 8px;
+}
+
+._profile-navbar .container-fluid {
+    padding: 0;
+}
+
+._profile-navbar {
+    height: 52px;
+    padding: 0 !important;
+    
+    margin-top: 44px;
+    background-color: #06070d;
+
+    
+}
+
+
+._profile-navbar .nav-link {
+    /* font-family: devioussans02extrabold,Helvetica Neue,Helvetica,Arial, meiryo, hiragino kaku gothic pro,sans-serif; */
+    font-family: devioussans02extrabold, impact;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.22;
+    line-height: 52px;
+    padding: 0 32px !important;
+    color: #b1b1b9;
+    
+    
+}
+
+._profile-navbar .nav-link.active {
+ 
+     color: #f2f2f2;
+    
+}
+._profile-navbar .nav-item:first-child .nav-link {
+    margin-left: 8px;
+
+}
+
+._profile-info {
+    margin-bottom: 40px;
+}
+
+._gallery-section {
+    padding: 0;
+}
